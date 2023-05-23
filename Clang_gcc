@@ -8,14 +8,14 @@ Check for update MacOS,
 xcode-select --install
 If gcc is install but at different folder => Change PATH in Makeconf
 
-Open 
+Open Makeconf: Go/Go to Folder
 
 /Library/Frameworks/R.framework/Resources/etc/Makeconf
 
 In Macos, gcc is install in (check from Terminal %where gfortran
 /usr/local/bin/gfortran
 
-Change FLIBS in Makeconf: L/opt/R/arm64/ ==> /usr/local/bin/gfortran
+Change FLIBS in Makeconf: L/opt/R/arm64/gfortran ==> /usr/local/bin/gfortran
 Ex:
 FLIBS =  -L/opt/R/arm64/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/opt/R/arm64/gfortran/lib -lgfortran -lemutls_w -lm
 To 
