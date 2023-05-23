@@ -4,7 +4,12 @@ ld: warning: directory not found for option '-L/opt/R/arm64/gfortran/lib'
 ld: library not found for -lgfortran
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
+Check for update MacOS,
+xcode-select --install
+If gcc is install but at different folder => Change PATH in Makeconf
+
 Open 
+
 /Library/Frameworks/R.framework/Resources/etc/Makeconf
 
 In Macos, gcc is install in (check from Terminal %where gfortran
